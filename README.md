@@ -25,6 +25,23 @@ if(Checker.validate()) {
 
 - See the examples
 
+# Supported data-type
+
+* number
+* lower_text_only
+* text
+* text_only
+* name
+* direccion
+* email
+* password
+* date
+* empty
+* select
+* checkbox
+* radio
+* select
+
 # Changelog
 - 2015/11/28
 - Added support to Foundation And Bootstrap
