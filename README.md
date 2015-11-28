@@ -18,10 +18,10 @@ Validame it's a simple and minimalist js validation librabry who integrates popu
 
 - On the JS implementation use something like this:
 
-`var Checker = new ValidaMe();`
-`if(Checker.validate()) {`
-`// DO SOMETHING ON THE VALIDATED FORM`
-`}`
+`var Checker = new ValidaMe();
+if(Checker.validate()) {
+// DO SOMETHING ON THE VALIDATED FORM
+}`
 
 - See the examples
 
