@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foundation .js Example</title>
+	<link rel="stylesheet" href="foundation/css/foundation.css" />
+</head>
+<body>
+	<label for="">
+		Text
+		<input type="text" data-type="text_only" value="asd">
+	</label>
+	<label for="">
+		Email
+		<input type="text" data-type="email" value="a@b.cl">
+	</label>
+	<label for="">
+		Number
+		<input type="text" data-type="number" value="1">
+	</label>
+	
+	<label for="">
+		Select
+		<select name="asd" id="asd" data-type="select">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+	</label>
+
+	<div class="row">
+	  <fieldset class="large-6 columns">
+	    <legend>Choose Your Favorite</legend>
+	    <input type="radio" name="pokemon" value="Red" id="pokemonRed" required data-type="radio"><label for="pokemonRed">Red</label>
+	    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" data-type="radio"><label for="pokemonBlue">Blue</label>
+	    <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow" data-type="radio"><label for="pokemonYellow">Yellow</label>
+	  </fieldset>
+	  <fieldset class="large-6 columns">
+	    <legend>Check these out</legend>
+	    <input name="check[]" type="checkbox" data-type="checkbox"><label for="checkbox1">Checkbox 1</label>
+	    <input name="check[]" type="checkbox" data-type="checkbox"><label for="checkbox2">Checkbox 2</label>
+	    <input name="check[]" type="checkbox" data-type="checkbox"><label for="checkbox3">Checkbox 3</label>
+	  </fieldset>
+	</div>
+
+	<label for=""> Es input
+		<textarea data-type="text"></textarea>
+	</label>
+
+	<button type="button" id="evaluate">Validate!</button>
+
+	<script src="jquery.min.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+	<script type="text/javascript" src="FieldChecker.js"></script>
+	<script type="text/javascript">
+		$("#evaluate").click(function(){
+			var Checker = new FieldChecker();			
+			if (Checker.validate()) {
+				// DO ANY ACTION
+			};
+		});		
+	</script>
+</body>
+</html>

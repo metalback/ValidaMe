@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap .js Example</title>
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="form-group">
+		<label for="email">Email</label>
+		<input type="email" class="form-control" id="email" data-type="email">
+	</div>
+	<div class="form-group">
+		<label for="number">Number</label>
+		<input type="text" class="form-control" id="number" data-type="number">
+	</div>
+
+	<div class="form-group">
+		<label>Select one:</label>
+		<select class="form-control" data-type="select">
+			<option>0</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	</div>
+
+	<div class="checkbox">
+		<label>
+			<input name="check[]"type="checkbox" value="1" data-type="checkbox"> checkbox 1
+		</label>
+		<label>
+			<input name="check[]"type="checkbox" value="2" data-type="checkbox"> checkbox 2
+		</label>
+		<label>
+			<input name="check[]"type="checkbox" value="3" data-type="checkbox"> checkbox 3
+		</label>
+	</div>
+
+	<div class="radio">
+		<label>
+			<input type="radio" name="opciones" id="opciones_1" value="opcion_1" data-type="radio">
+			This is one radio
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="opciones" id="opciones_2" value="opcion_2" data-type="radio">
+			This is the second one
+		</label>
+	</div>
+
+	<div class="form-group">
+		<label>
+			This is a textearea
+			<textarea class="form-control" rows="3" data-type="text"></textarea>
+		</label>
+	</div>
+
+	<button type="button" id="evaluate">Validate!</button>
+
+	<script src="foundation/js/vendor/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="FieldChecker.js"></script>
+	<script type="text/javascript">
+		$("#evaluate").click(function(){
+			var Checker = new FieldChecker({
+				'frame':'Bootstrap'
+			});
+			
+			if (Checker.validate()) {
+				// DO ANY ACTION
+			};
+		});		
+	</script>
+</body>
+</html>
