@@ -11,16 +11,14 @@ Validame it's a simple and minimalist js validation librabry who integrates popu
 # Implementation
 
 - In your html input/textarea/select add the tag data-type with the supported type value:
-
-Example:
-<input type="number" data-type="number"> 
+- Example:
+- <input type="number" data-type="number"> 
 
 - On the JS implementation use something like this:
-
-var Checker = new ValidaMe();
-if(Checker.validate()) {
-	// DO SOMETHING ON THE VALIDATED FORM
-}
+-var Checker = new ValidaMe();
+\nif(Checker.validate()) {
+\n // DO SOMETHING ON THE VALIDATED FORM
+\n}
 
 - See the examples
 
