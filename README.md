@@ -45,6 +45,6 @@ Validame it's a simple and minimalist js validation librabry who integrates popu
 # Changelog
 - 2017/09/17
 - Added support to Foundation 5
-- Changing the library to Singleton, to a better integration.
+- Changing the library to Singleton, for a better integration.
 - 2015/11/28
 - Added support to Foundation And Bootstrap
