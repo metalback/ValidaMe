@@ -52,9 +52,8 @@
     <script src="foundation/js/foundation.min.js"></script>
 	<script type="text/javascript" src="ValidaMe.js"></script>
 	<script type="text/javascript">
-		$("#evaluate").click(function(){
-			var Checker = new ValidaMe();			
-			if (Checker.validate()) {
+		$("#evaluate").click(function(){			
+			if (ValidaMe.validate()) {
 				// DO ANY ACTION
 			};
 		});		

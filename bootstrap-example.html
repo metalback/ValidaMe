@@ -66,11 +66,9 @@
 	<script type="text/javascript" src="ValidaMe.js"></script>
 	<script type="text/javascript">
 		$("#evaluate").click(function(){
-			var Checker = new ValidaMe({
-				'frame':'Bootstrap'
-			});
+			ValidaMe.configuration.frame = 'Bootstrap';
 			
-			if (Checker.validate()) {
+			if (ValidaMe.validate()) {
 				// DO ANY ACTION
 			};
 		});		
