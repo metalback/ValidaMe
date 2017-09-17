@@ -6,6 +6,7 @@ Validame it's a simple and minimalist js validation librabry who integrates popu
 
 # Supported Frameworks
 - Foundation 6
+- Fondation 5 
 - Bootstrap 3.3.6
 
 # Implementation
@@ -18,8 +19,7 @@ Validame it's a simple and minimalist js validation librabry who integrates popu
 
 - On the JS implementation use something like this:
 
-`var Checker = new ValidaMe();
-if(Checker.validate()) {
+`if(ValidaMe.validate()) {
 // DO SOMETHING ON THE VALIDATED FORM
 }`
 
@@ -43,5 +43,8 @@ if(Checker.validate()) {
 * select
 
 # Changelog
+- 2017/09/17
+- Added support to Foundation 5
+- Changing the library to Singleton, to a better integration.
 - 2015/11/28
 - Added support to Foundation And Bootstrap
